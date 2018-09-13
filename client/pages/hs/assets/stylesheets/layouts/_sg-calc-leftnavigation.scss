@@ -1,0 +1,42 @@
+#sg-calc__leftnavigation {
+    position: relative;
+    float: left;
+    padding-left: 12px;
+    width: 220px;
+    height: 100%;
+    box-shadow: 0 0 5px 0 rgba(176, 194, 200, 0.49);
+    .sg-nav__logo {
+        padding-top: 12px;
+        height: 50px;
+        .sg-nav__logoimg {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .sg-nav__items {
+        .sg-nav__item {
+            position: relative;
+            padding: 7px 0;
+            .sg-nav__itemicon {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 20px;
+                vertical-align: middle;
+            }
+            .sg-nav__itemcontent {
+                font-family: NanumSquareB;
+                padding-left: 4px;
+                font-size: 14px;
+                font-weight: bold;
+                vertical-align: middle;
+            }
+        }
+        .sg-nav__item:hover {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+    }
+}

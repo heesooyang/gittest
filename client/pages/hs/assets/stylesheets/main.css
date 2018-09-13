@@ -1,0 +1,384 @@
+html, body {
+  position: relative;
+  height: 100%;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-y: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: NanumSquareR;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+
+@font-face {
+  font-family: NanumSquareEB;
+  src: url("../fonts/NanumSquareEB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareB;
+  src: url("../fonts/NanumSquareB.woff") format("woff");
+}
+
+@font-face {
+  font-family: NanumSquareR;
+  src: url("../fonts/NanumSquareR.woff") format("woff");
+}
+
+#sg-calc__leftnavigation {
+  position: relative;
+  float: left;
+  padding-left: 12px;
+  width: 220px;
+  height: 100%;
+  -webkit-box-shadow: 0 0 5px 0 rgba(176, 194, 200, 0.49);
+          box-shadow: 0 0 5px 0 rgba(176, 194, 200, 0.49);
+}
+
+#sg-calc__leftnavigation .sg-nav__logo {
+  padding-top: 12px;
+  height: 50px;
+}
+
+#sg-calc__leftnavigation .sg-nav__logo .sg-nav__logoimg {
+  width: 30px;
+  height: 30px;
+}
+
+#sg-calc__leftnavigation .sg-nav__items .sg-nav__item {
+  position: relative;
+  padding: 7px 0;
+}
+
+#sg-calc__leftnavigation .sg-nav__items .sg-nav__item .sg-nav__itemicon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  vertical-align: middle;
+}
+
+#sg-calc__leftnavigation .sg-nav__items .sg-nav__item .sg-nav__itemcontent {
+  font-family: NanumSquareB;
+  padding-left: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+#sg-calc__leftnavigation .sg-nav__items .sg-nav__item:hover {
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+#sg-calc__contents {
+  position: relative;
+  margin-left: 220px;
+  height: 100%;
+}
+
+#sg-calc__contents #sg-calc__pages {
+  position: relative;
+  padding: 70px 20px 20px;
+}
+
+#sg-calc__header {
+  position: fixed;
+  width: calc(100% - 220px);
+  height: 50px;
+  padding-left: 16px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(176, 194, 200, 0.27);
+          box-shadow: 0 2px 4px 0 rgba(176, 194, 200, 0.27);
+  z-index: 10;
+}
+
+#sg-calc__header #sg-header__navbtn {
+  padding: 0;
+  height: 50px;
+  opacity: .7;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#sg-calc__header #sg-header__navbtn .sg-header__hamburgerbtn {
+  margin-top: 3px;
+  border-radius: 1px;
+  width: 20px;
+  height: 2px;
+  border-bottom: 2px solid black;
+}
+
+#sg-calc__header #sg-header__logout {
+  height: 50px;
+  float: right;
+  margin-right: 16px;
+  font-family: NanumSquareR;
+  font-size: 13px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.sg-calc__header::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+.sg-calc__filledbtn {
+  color: white;
+  font-family: NanumSquareEB;
+  background-color: #5c9fff;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 2px 0 rgba(140, 140, 141, 0.8);
+          box-shadow: 1px 1px 2px 0 rgba(140, 140, 141, 0.8);
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100px;
+  padding: 0 10px;
+  height: 36px;
+  font-size: 16px;
+}
+
+.sg-calc__filledbtn:hover {
+  -webkit-box-shadow: 2px 2px 3px 0 rgba(140, 140, 141, 0.8);
+          box-shadow: 2px 2px 3px 0 rgba(140, 140, 141, 0.8);
+  cursor: pointer;
+}
+
+.sg-calc__filledbtn:focus {
+  outline: none;
+}
+
+.sg-calc__searchingbox {
+  position: relative;
+  display: inline-block;
+  border: solid 1px #b0b8c8;
+  border-radius: 3px;
+  height: 36px;
+  width: 488px;
+}
+
+.sg-calc__searchingbox .sg-searchingbox__content {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  font-size: 14px;
+  padding-left: 8px;
+}
+
+.sg-calc__searchingbox .sg-searchingbox__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 100%;
+  background-image: url("/pages/hs/assets/images/ic-search-40.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  outline: none;
+  background-position: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.sg-calc-selectbox {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 36px;
+  cursor: pointer;
+}
+
+.sg-calc-selectbox .sg-selectbox__content {
+  border: solid 1px #b0b8c8;
+  border-radius: 3px;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  padding-left: 8px;
+  cursor: pointer;
+}
+
+.sg-calc-selectbox .sg-selectbox__content .sg-selectbox__placeholder {
+  color: #b0b8c8;
+  font-size: 14px;
+  font-family: NanumSquareB;
+  line-height: 36px;
+}
+
+.sg-calc-selectbox .sg-selectbox__arrowbtn {
+  position: absolute;
+  right: 6px;
+  top: 15px;
+  border-top: 5px solid black;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.sg-calc-selectbox .sg-selectbox__items {
+  display: none;
+  width: 120px;
+  max-height: 150px;
+  background-color: white;
+  position: absolute;
+  overflow-y: auto;
+  border: 1px solid #b0b8c8;
+}
+
+.sg-calc-selectbox .sg-selectbox__items .sg-selectbox__item {
+  position: relative;
+  padding-left: 8px;
+  width: 100%;
+  height: 28px;
+  line-height: 28px;
+  font-size: 12px;
+  color: #222;
+}
+
+.sg-calc-selectbox:hover .sg-selectbox__items {
+  display: block;
+}
+
+.sg-calc__pageindicator {
+  position: relative;
+  margin-top: 20px;
+}
+
+.sg-calc-tablebody tr {
+  cursor: pointer;
+}
+
+.sg-calc-tablebody tr .sg-tablebody__body {
+  border: 0;
+  border-right: 1px solid #e4e7ed;
+  padding: 0 8px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 12px;
+  color: #222;
+}
+
+.sg-calc-tablebody tr .sg-tablebody__body:last-child {
+  border-right: 0;
+}
+
+.sg-calc-tablebody:hover {
+  background-color: #f3f3f3;
+}
+
+.sg-calc-table {
+  margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: transparent;
+}
+
+.sg-calc-table .sg-calc-tablebody:nth-child(2n) {
+  background-color: #fafcff;
+}
+
+.sg-calc__tablehead tr {
+  border-top: 1px solid #e4e7ed;
+  border-bottom: 2px solid #ccd2dc;
+}
+
+.sg-calc__tablehead tr .sg-tablehead__head {
+  border: 0;
+  border-right: 1px solid #e4e7ed;
+  padding: 0 8px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #222;
+  background-color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center !important;
+}
+
+.sg-calc__tablehead tr .sg-tablehead__head:last-child {
+  border-right: 0;
+}
+
+.sg-pages__header {
+  position: relative;
+}
+
+.sg-pages__header .sg-pages__title {
+  font-family: NanumSquareB;
+  font-size: 27px;
+  font-weight: 400;
+  color: #222;
+}
+
+.sg-pages__boxwrap {
+  margin-top: 18px;
+}
+/*# sourceMappingURL=main.css.map */

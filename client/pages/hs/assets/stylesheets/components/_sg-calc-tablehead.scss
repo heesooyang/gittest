@@ -1,0 +1,25 @@
+.sg-calc__tablehead {
+    tr {
+        border-top: 1px solid #e4e7ed;
+        border-bottom: 2px solid #ccd2dc;
+        .sg-tablehead__head {
+            border: 0;
+            border-right: 1px solid #e4e7ed;
+            padding: 0 8px;
+            height: 38px;
+            line-height: 38px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #222;
+            background-color: white;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            text-align: center !important;
+        }
+        .sg-tablehead__head:last-child {
+            border-right: 0;
+
+        }
+    }
+}

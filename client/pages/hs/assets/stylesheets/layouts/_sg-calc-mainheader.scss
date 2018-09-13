@@ -1,0 +1,44 @@
+#sg-calc__header{
+    position: fixed;
+    width: calc(100% - 220px);
+    height: 50px;
+    padding-left: 16px;
+    box-shadow: 0 2px 4px 0 rgba(176, 194, 200, 0.27);
+    z-index: 10;
+
+    #sg-header__navbtn{
+        padding: 0;
+        // line-height: 50px;
+        height: 50px;
+        opacity: .7;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        .sg-header__hamburgerbtn{
+            margin-top: 3px;
+            border-radius: 1px;
+            width: 20px;
+            height: 2px;
+            border-bottom: 2px solid black;
+
+        }
+    }
+    #sg-header__logout{
+        // position: absolute;
+        // right: 16px;
+        // line-height: 50px;
+        height: 50px;
+        float: right;
+        margin-right: 16px;
+        font-family: NanumSquareR;
+        font-size: 13px;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+    }
+}
+.sg-calc__header::after{
+    clear: both;
+    content: "";
+    display: block;
+}

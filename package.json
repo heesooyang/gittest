@@ -1,0 +1,27 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://webdusrn@github.com/teamslogup/practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teamslogup/practice/issues"
+  },
+  "homepage": "https://github.com/teamslogup/practice#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "ejs-loader": "^0.3.1",
+    "ejs-locals": "^1.0.2",
+    "express": "^4.16.3",
+    "http": "0.0.0",
+    "morgan": "^1.9.0"
+  }
+}

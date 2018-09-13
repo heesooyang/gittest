@@ -1,0 +1,9 @@
+.sg-calc-table{
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: transparent;
+    .sg-calc-tablebody:nth-child(2n){
+        background-color: #fafcff;
+    }
+}
